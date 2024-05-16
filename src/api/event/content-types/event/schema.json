@@ -35,6 +35,12 @@
     },
     "location": {
       "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categorie.categorie",
+      "inversedBy": "events"
     }
   }
 }
