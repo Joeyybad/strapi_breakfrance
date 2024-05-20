@@ -404,6 +404,7 @@ export interface ApiEventEvent extends Schema.CollectionType {
     singularName: 'event';
     pluralName: 'events';
     displayName: 'Event';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -420,6 +421,7 @@ export interface ApiEventEvent extends Schema.CollectionType {
       'manyToOne',
       'api::categorie.categorie'
     >;
+    registeredUsers: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
